@@ -13,7 +13,8 @@ def long_planeteer_calls(short_words)
   end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(soup)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  soup.find do |x| cheese_types.include?(x)
+  end
 end
